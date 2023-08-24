@@ -3,7 +3,7 @@ type Props = {
     iconURL: string
 }
 
-export const Button = ({label, iconURL}: Props) => {
+const Button = ({label, iconURL}: Props) => {
     return (
         <button type="button" className="flex justify-center items-center gap-2 px-7 py-4 border 
         font-montserrat text-lg leading-none bg-coral-red rounded-full text-white">
@@ -13,3 +13,5 @@ export const Button = ({label, iconURL}: Props) => {
         
     )
 }
+
+export default Button
