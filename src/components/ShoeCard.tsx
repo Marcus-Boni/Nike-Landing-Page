@@ -1,4 +1,14 @@
-const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg } : any) => {
+type ShoeCardProps = {
+    imgURL: {
+        thumbnail: string; 
+        bigShoe: string; 
+        id: number; 
+    }
+    changeBigShoeImage: (s: string) => void
+    bigShoeImg: string
+}
+
+const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }: ShoeCardProps) => {
 
     const handleClick = () => {
         if(bigShoeImg !== imgURL.bigShoe) {
